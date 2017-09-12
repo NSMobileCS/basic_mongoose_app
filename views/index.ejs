@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:500" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2 class='bold'>
+            Users
+        </h2>
+        <% for (var x in users) { %>
+            <h3>Name: <%= users[x].name %></h3>
+            <h4>Age: <%= users[x].age %></h4>
+            <hr>
+        <% } %>
+        <form action="/users" method="POST" class='classy formclass'>
+            <label for='name'>Name </label>
+            <input type='text' id='name' name='name'>
+            <label for="age">Age </label>
+            <input type='number' id='age' name='age'>
+            <input type="submit" value="postin' up">
+        </form>
+        </body>
+    </html>
+    

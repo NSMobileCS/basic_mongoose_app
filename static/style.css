@@ -1,0 +1,10 @@
+*{
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+
+.bold{
+  font-size: 2em;
+  background-color: darkcyan;
+  border: 2px double darkorange;
+  border-radius: 2px;
+}
